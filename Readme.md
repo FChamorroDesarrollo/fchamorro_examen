@@ -1,7 +1,8 @@
 # Descripción del Examen
 
-El exámen tendrá una puntuación máxima de 15 puntos esta divido en 4 secciones.
-Usted deberá crear una rama con el siguiente formato `[aliasCorreo]_examen`, Ej:
+El exámen tendrá una puntuación máxima de 15 puntos está dividido en 4 secciones.<br/><br/>
+
+Usted deberá crear una rama con el siguiente formato `[aliasCorreo]_examen`, el cual será el identificativo de su solución al exámen en el repositorio, Ej:
 **zulest_examen**
 
 Debe sustituir sus datos personales en la siguiente instrucción que se encuentra en `Program.cs`:<br/><br/>
@@ -10,7 +11,12 @@ Debe sustituir sus datos personales en la siguiente instrucción que se encuentr
 El método `Impresion()` ya se encuentra implementado, es el que se encargará de dibujar en la Consola el resultado de su
 codificación.
 
-## SECCION DE EXTENSIONES
+De igual forma se proveen las extensiones `TReturn FbsPipe<T, TReturn>(this T @this, Func<T, TReturn> funcion)` y `void FbsPipeAction<T>(this T @this, Action<T> accion)` por si necesitan durante la ejecución del exámen.
+
+Tendrá un tiempo de 1:30 horas para la ejecución de las actividades, una vez culminado debera realizar un `push` de su rama al repositorio. **Solo serán evaluados los códigos que se encuentren en el repositorio** y se hubiera realizado el `commit` y `push` hasta las 18:00 horas del día de hoy 19 / MARZO / 2024.
+
+**EXITOS....**
+## SECCIÓN - EXTENSIONES
 
 ### Ejercicio 1 (1 punto)
 
@@ -31,7 +37,7 @@ En este ejercicio debe lograr que se esperen 5 segundos, y el resultado sea con 
 
 ![image_2.png](images/image_2.png)
 
-## SECCION DE LINQ
+## SECCIÓN - LINQ
 
 En esta sección se comprobarán los conocimientos relacionados con el manejo de colecciones usando Linq
 
@@ -45,7 +51,7 @@ Debe interpretar la misma para dada la colección `salesData` en el método `LiE
 para obtener
 por **Tipo de Incidente** la cantidad que ha ocurrido en cada **Mes**
 
-## SECCION DE CONOCIMIENTOS GENERALES DE C#
+## SECCIÓN - CONOCIMIENTOS DE C#
 
 ### Ejercicio 1 (1 punto)
 
@@ -57,7 +63,7 @@ Implemente un Operador que corrija el error al descomentar el contenido del mét
 
 Debe analizar la clase `DatosFinancierosWs` y revise si cumple con los principios **SOLID**, si cumple agregue un comentario encima de la clase diciendo **CUMPLE LOS PRINCIPIOS**, si no cumple entonces realice la refactorización que crea necesaria para cumplir los principios. 
 
-## SECCION CONOCIMIENTOS DE PROCESOS DE FINANCIAL
+## SECCIÓN - CONOCIMIENTOS DE PROCESOS DE FINANCIAL
 
 ### Ejercicio 1 (2 puntos)
 
