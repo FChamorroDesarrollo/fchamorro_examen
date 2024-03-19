@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SifizSoft_P1", "SifizSoft_P1\SifizSoft_P1.csproj", "{43B40BEC-4677-492A-9EC0-16787C7E5F04}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensiones", "Extensiones\Extensiones.csproj", "{7167F595-3EBD-49C1-8F0F-E68171F448C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{F1A5F8AC-BC9A-4D29-B16F-9B3731A2508A}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{75B803FF-F92C-4F83-B521-268A87DBAA8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43B40BEC-4677-492A-9EC0-16787C7E5F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43B40BEC-4677-492A-9EC0-16787C7E5F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43B40BEC-4677-492A-9EC0-16787C7E5F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43B40BEC-4677-492A-9EC0-16787C7E5F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7167F595-3EBD-49C1-8F0F-E68171F448C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7167F595-3EBD-49C1-8F0F-E68171F448C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7167F595-3EBD-49C1-8F0F-E68171F448C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7167F595-3EBD-49C1-8F0F-E68171F448C7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14EEEB35-6FD0-4F4B-B4FC-E05FD409AD2E}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{75B803FF-F92C-4F83-B521-268A87DBAA8C} = {F1A5F8AC-BC9A-4D29-B16F-9B3731A2508A}
+	EndGlobalSection
+EndGlobal
