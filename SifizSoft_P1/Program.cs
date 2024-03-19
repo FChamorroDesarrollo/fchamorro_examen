@@ -14,14 +14,17 @@ Repositorio.CargarDatos<PadreDivision>("PadreDivisionesActivosFijos.csv");
 Repositorio.CargarDatos<Division>("DivisionesActivosFijos.csv");
 Repositorio.CargarDatos<Activo>("ActivosFijos.csv");
 
-new DatoPersona("Tomas Zules", "SifizSoft").Dump();
+new DatoPersona("Fernando Chamorro", "SifizSoft").Dump();
 
-CuestionarioEG.EgEjercicio1_Puntaje1();
+CuestionarioEG.EgEjercicio1_Puntaje1(); //ok
+
 CuestionarioEG.EgEjercicio2_Puntaje1();
-await CuestionarioEG.EgEjercicio3_Puntaje3();
+
+await CuestionarioEG.EgEjercicio3_Puntaje3(); // ok
 
 CuestionarioLi.LiEjercicio1_Puntaje2();
-CuestionarioCs.CsEjemplo1_Puntaje1();
+
+CuestionarioCs.CsEjemplo1_Puntaje1(); //ok
 
 RegistroContable.ConsultaDocumentosRegistrosDescuadrados();
 //ProyectoVe.MovimientoVentanilla.ConsultaConsolidada(DateTime.Now.Date);

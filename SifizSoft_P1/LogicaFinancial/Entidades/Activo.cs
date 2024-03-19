@@ -5,6 +5,11 @@ namespace SifizSoft_P1.LogicaFinancial.Entidades;
 
 public partial class Activo
 {
+
+    public Activo()
+    { 
+
+    }
     [Key] [Column("SECUENCIAL")] public int Secuencial { get; private set; }
 
     [Column("SECUENCIALDIVESTRUCTURAACTFIJO")]
