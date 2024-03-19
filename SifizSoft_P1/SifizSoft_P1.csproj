@@ -15,7 +15,6 @@
 
     <ItemGroup>
         <ProjectReference Include="..\Extensiones\Extensiones.csproj"/>
-        <ProjectReference Include="..\ProyectoVe\ProyectoVe.csproj"/>
     </ItemGroup>
 
     <ItemGroup>
