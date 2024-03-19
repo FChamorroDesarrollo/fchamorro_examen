@@ -5,6 +5,7 @@ namespace Sfz_Repositorio_Examen;
 
 public class Repositorio
 {
+    //dato para probar
     public static Dictionary<string, List<object>> Datos { get; } = new();
 
     public static void CargarDatos<T>(string rutaArchivo)
