@@ -5,6 +5,11 @@ namespace SifizSoft_P1.LogicaFinancial.Entidades;
 
 public partial class Activo
 {
+
+    public Activo()
+    { 
+
+    }
     [Key] [Column("SECUENCIAL")] public int Secuencial { get; private set; }
 
     [Column("SECUENCIALDIVESTRUCTURAACTFIJO")]
@@ -221,5 +226,20 @@ public partial class Activo
         IncluyeValorIva = incluyeValorIva;
     }
 
+
+    public static void DRLPorSecuencialSecuencialEmpresaActivo()
+    { 
+
+    }
+
+
+    //public string DevuelveCamino(List<Division> divisones, int secuencialDivision, string delimitador)
+    //{ 
+    //    var xx =
+    //        divisones
+    //        .GroupBy(x => x.SecuencialNivel)
+    //        .Select(x => x.Key)
+    //        .ToArray();
+    //}
     #endregion
 }

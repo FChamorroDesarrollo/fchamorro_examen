@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Security.Cryptography;
+using Extensiones;
 using Sfz_Repositorio_Examen;
 
 namespace SifizSoft_P1.LogicaFinancial.Entidades;
@@ -50,10 +52,24 @@ public partial class RegistroContable
     public byte[] Concurrencia { get; private set; }
 
     public static void ConsultaDocumentosRegistrosDescuadrados()
-    {
-        var registrosContables =
-            Repositorio.DameLista<RegistroContable>();
+    => Repositorio
+      .DameLista<RegistroContable>()
+      .GroupBy(x => new
+      {
+          x.Documento,
+          x.SecuencialOficina
+      })
+      .Select(y => new
+      {
+          y.Key.Documento,
+          y.Key.SecuencialOficina,
+          ValorDebito = y.Sum(x => x.EsDebito ? x.Valor : 0),
+          ValorCredito = y.Sum(x => x.EsDebito ? 0 : x.Valor)
+      })
+      .Where(x => x.ValorDebito != x.ValorCredito)
+      .Select(x => x.Documento)
+      .Impresion("ConsultaDocumentosRegistrosDescuadrados");
 
         //TODO: Implementar la logica para obtener los documentos de los registros descuadrados
-    }
+    
 }
