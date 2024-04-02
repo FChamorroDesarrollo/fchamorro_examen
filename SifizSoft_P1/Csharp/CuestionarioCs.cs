@@ -1,4 +1,5 @@
 ﻿using Extensiones;
+using System.Runtime.CompilerServices;
 
 namespace SifizSoft_P1.Csharp
 {
@@ -9,13 +10,21 @@ namespace SifizSoft_P1.Csharp
         {
             var incidente1 = new Incidente { TipoIncidente = "Bugs", Mes = "Enero", Cantidad = 100 };
             var incidente2 = new Incidente { TipoIncidente = "Bugs", Mes = "Enero", Cantidad = 200 };
-            incidente1.Cantidad +=  incidente2.Cantidad;
+            incidente1 += incidente2;
+          
             incidente1.Impresion();
         }
     }
-
+   
     public class Incidente
     {
+
+        public static Incidente operator +(Incidente incidenteInicial, Incidente incidenteFinal)
+        {
+            incidenteInicial.Cantidad += incidenteFinal.Cantidad;
+            return incidenteInicial;
+        }
+
         public required string TipoIncidente { get; set; }
         public required string Mes { get; set; }
         public required int Cantidad { get; set; }

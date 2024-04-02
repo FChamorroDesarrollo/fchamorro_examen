@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using Dumpify;
+using Extensiones;
 using Sfz_Repositorio_Examen;
 using SifizSoft_P1;
 using SifizSoft_P1.Csharp;
@@ -16,15 +17,15 @@ Repositorio.CargarDatos<Activo>("ActivosFijos.csv");
 
 new DatoPersona("Fernando Chamorro", "SifizSoft").Dump();
 
-CuestionarioEG.EgEjercicio1_Puntaje1(); //ok
+CuestionarioEG.EgEjercicio1_Puntaje1(); //OK_2
 
-CuestionarioEG.EgEjercicio2_Puntaje1();
+CuestionarioEG.EgEjercicio2_Puntaje1(); //OK_2
 
-await CuestionarioEG.EgEjercicio3_Puntaje3(); // ok
+await CuestionarioEG.EgEjercicio3_Puntaje3(); //OK_2
 
-CuestionarioLi.LiEjercicio1_Puntaje2();
+CuestionarioLi.LiEjercicio1_Puntaje2();//OK_2
 
-CuestionarioCs.CsEjemplo1_Puntaje1(); //ok
+CuestionarioCs.CsEjemplo1_Puntaje1(); //OK_2
 
 RegistroContable.ConsultaDocumentosRegistrosDescuadrados();
 //ProyectoVe.MovimientoVentanilla.ConsultaConsolidada(DateTime.Now.Date);

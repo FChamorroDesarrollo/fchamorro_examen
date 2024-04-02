@@ -1,4 +1,6 @@
-﻿namespace SifizSoft_P1.Linq
+﻿using Extensiones;
+
+namespace SifizSoft_P1.Linq
 {
     public static class CuestionarioLi
     {
@@ -17,7 +19,9 @@
             };
 
             //TODO: Obtener por TipoIncidente la cantidad ocurrida en cada mes usando la extensión Pivot.
-
+            salesData
+                .Pivot(x => x.Mes, y => y.TipoIncidente, z => z.Sum(x => x.Cantidad))
+                .Impresion();
 
         }
     }
